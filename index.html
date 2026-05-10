@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="description"
+    content="Wolf Anime — Tu app oficial para ver anime en HD. Descarga gratuita para Windows, Android y más. Amplia biblioteca, experiencia fluida y premium." />
+  <meta name="theme-color" content="#000000" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wolf Anime — La App de Anime Definitiva" />
+  <meta property="og:description"
+    content="Descarga Wolf Anime y disfruta miles de títulos en HD con la mejor experiencia." />
+  <meta property="og:type" content="website" />
+  <title>Wolf Anime — Descarga la App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ===== PARTICLES BACKGROUND ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#hero" aria-label="Wolf Anime Home">
+        <div class="logo-icon">
+          <img src="logo.png" alt="Wolf Anime Logo" width="200" height="auto" />
+        </div>
+      </a>
+
+      <div class="nav__hamburger" id="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="nav__overlay" id="nav-overlay"></div>
+      
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#features">Características</a></li>
+        <li><a href="#screenshots">Capturas</a></li>
+        <li><a href="#download">Descargar</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#download" class="nav__cta">Descargar Ahora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow hero__glow--left"></div>
+    <div class="hero__glow hero__glow--right"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="badge__dot"></span>
+        Versión 1.0.0 disponible
+      </div>
+
+      <h1 class="hero__title">
+        La experiencia<br />
+        <span class="gradient-text">definitiva</span><br />
+        de anime
+      </h1>
+
+      <p class="hero__subtitle" data-animate>
+        Disfruta miles de títulos en alta definición. Wolf Anime es <strong>totalmente gratuita</strong> y se sostiene
+        con anuncios. <strong>No requiere registro, todo es totalmente local.</strong>
+      </p>
+
+
+
+      <div class="hero__actions">
+        <a href="#download" class="btn btn--primary" id="hero-cta">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-6 2h12v2H6v-2z" />
+          </svg>
+          Descargar Gratis
+        </a>
+        <a href="#screenshots" class="btn btn--ghost">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          Ver Demo
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number" data-target="50">0</span><span class="stat__unit">+</span>
+          <span class="stat__label">Títulos</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number" data-target="2">0</span><span class="stat__unit"></span>
+          <span class="stat__label">Idiomas</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__number" data-target="100">0</span><span class="stat__unit">%</span>
+          <span class="stat__label">Gratis</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__mockup">
+      <div class="mockup-phone">
+        <div class="mockup-phone__frame">
+          <img src="cap/home.jpeg" alt="Pantalla de inicio de Wolf Anime" class="mockup-phone__real-img"
+            loading="eager" />
+        </div>
+        <div class="mockup-phone__glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <span class="section-tag">Características</span>
+      <h2>Todo lo que necesitas<br /><span class="gradient-text">en una sola app</span></h2>
+    </div>
+
+    <div class="features__grid">
+      <div class="feature-card feature-card--large" data-animate>
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 10l4.553-2.277A1 1 0 0121 8.649v6.702a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h3>Reproductor Inteligente</h3>
+        <p>Optimizado para móviles: incluye omitir intro, adaptable a pantalla completa y función de <strong>continuar
+            viendo</strong> disponible.</p>
+        <div class="feature-card__decoration"></div>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-card__icon">
+          <i class="fa-solid fa-server"></i>
+        </div>
+        <h3>Multi-Servidor</h3>
+        <p>Cambia de servidor con un clic. Nunca pierdas un episodio por caídas.</p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-card__icon">
+          <i class="fa-solid fa-language"></i>
+        </div>
+        <h3>Sub &amp; Dub</h3>
+        <p>Disfruta el contenido con subtítulos en <strong>español latino</strong> o audio original en
+          <strong>japonés</strong>, según disponga cada título.
+        </p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-card__icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <h3>Lista de Favoritos</h3>
+        <p>Guarda tus series y lleva un control de tus episodios vistos de forma automática.</p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-card__icon">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+        </div>
+        <h3>Contenido al Día</h3>
+        <p>Nuevos episodios agregados diariamente. Tu progreso y favoritos se guardan de forma <strong>100% local</strong> en tu dispositivo.</p>
+      </div>
+
+      <div class="feature-card feature-card--h glow-pulse" data-animate>
+        <div class="feature-card__icon">
+          <i class="fa-solid fa-shield-heart" style="color: var(--purple-glow);"></i>
+        </div>
+        <h3>Catálogo +18 (H)</h3>
+        <p>Al activar filtros en la app, tienes acceso exclusivo y categorizado a miles de títulos de contenido H sin
+          restricciones.</p>
+        <div class="feature-card__decoration"></div>
+      </div>
+
+      <div class="feature-card feature-card--large feature-card--right" data-animate>
+        <div class="feature-card__icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Actualizaciones Automáticas</h3>
+        <p>Los nuevos episodios se agregan automáticamente al momento de salir. Siempre al día con los últimos
+          lanzamientos.</p>
+        <div class="feature-card__decoration"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GUIDE H ===== -->
+  <section class="guide-h" id="guide-h">
+    <div class="guide-h__inner">
+      <div class="guide-h__content" data-animate>
+        <span class="section-tag section-tag--purple">Contenido Exclusivo</span>
+        <h2>¿Cómo activar el<br /><span class="gradient-text-purple">Catálogo H</span>?</h2>
+        <p class="section-desc">Accede a miles de títulos sin restricciones activando el filtro de contenido adulto.
+          Sigue estos pasos:</p>
+
+        <ul class="guide-h__steps">
+          <li>
+            <div class="step-num">1</div>
+            <div>
+              <strong>Ve a tu Perfil</strong>
+              <p>Toca el ícono de Perfil en el menú inferior de la aplicación (extremo derecho).</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">2</div>
+            <div>
+              <strong>Busca el Interruptor H</strong>
+              <p>Dentro de los ajustes de tu cuenta, localiza la opción "Contenido H" (indicada con aviso legal).</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">3</div>
+            <div>
+              <strong>Activa el Switch</strong>
+              <p>Presiona el botón para encenderlo. Ahora visualizarás la categoría H en el catálogo y buscadores.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="guide-h__image" data-animate>
+        <div class="guide-h__arrow">
+          <i class="fa-solid fa-arrow-down"></i>
+          <span class="guide-h__arrow-text">¡Actívalo aquí!</span>
+        </div>
+        <div class="guide-h__mockup">
+          <div class="screenshot-frame screenshot-frame--photo">
+            <img src="cap/profile.jpeg" alt="Perfil Wolf Anime" />
+          </div>
+          <div class="guide-h__glow"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCREENSHOTS ===== -->
+  <section class="screenshots" id="screenshots">
+    <div class="section-header">
+      <span class="section-tag">Vista Previa</span>
+      <h2>Así luce Wolf Anime<br /><span class="gradient-text">en tu dispositivo</span></h2>
+    </div>
+
+    <div class="screenshots__track-wrapper">
+      <div class="screenshots__track" id="screenshots-track">
+
+        <!-- Screen 1: Inicio -->
+        <div class="screenshot-item">
+          <div class="screenshot-frame screenshot-frame--photo">
+            <img src="cap/home.jpeg" alt="Pantalla de inicio de Wolf Anime" loading="lazy" />
+          </div>
+          <p class="screenshot-item__label">Inicio</p>
+        </div>
+
+        <!-- Screen 2: Categorías -->
+        <div class="screenshot-item">
+          <div class="screenshot-frame screenshot-frame--photo">
+            <img src="cap/categoria.jpeg" alt="Categorías de Wolf Anime" loading="lazy" />
+          </div>
+          <p class="screenshot-item__label">Categorías</p>
+        </div>
+
+        <!-- Screen 3: Mi Lista -->
+        <div class="screenshot-item">
+          <div class="screenshot-frame screenshot-frame--photo">
+            <img src="cap/mi lista.jpeg" alt="Mi lista en Wolf Anime" loading="lazy" />
+          </div>
+          <p class="screenshot-item__label">Mi Lista</p>
+        </div>
+
+        <!-- Screen 4: Buscador -->
+        <div class="screenshot-item">
+          <div class="screenshot-frame screenshot-frame--photo">
+            <img src="cap/buscador.jpeg" alt="Buscador de Wolf Anime" loading="lazy" />
+          </div>
+          <p class="screenshot-item__label">Buscador</p>
+        </div>
+
+        <!-- Screen 5: Reproductor -->
+        <div class="screenshot-item">
+          <div class="screenshot-frame screenshot-frame--photo">
+            <img src="cap/player.jpeg" alt="Reproductor de Wolf Anime" loading="lazy" />
+          </div>
+          <p class="screenshot-item__label">Reproductor</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="screenshots__dots" id="ss-dots">
+      <button class="ss-dot active" data-idx="0" aria-label="Inicio"></button>
+      <button class="ss-dot" data-idx="1" aria-label="Categorías"></button>
+      <button class="ss-dot" data-idx="2" aria-label="Mi Lista"></button>
+      <button class="ss-dot" data-idx="3" aria-label="Buscador"></button>
+      <button class="ss-dot" data-idx="4" aria-label="Reproductor"></button>
+    </div>
+  </section>
+
+  <!-- ===== DOWNLOAD ===== -->
+  <section class="download" id="download">
+    <div class="download__glow"></div>
+    <div class="section-header">
+      <span class="section-tag">Descarga</span>
+      <h2>Disponible en<br /><span class="gradient-text">todas las plataformas</span></h2>
+      <p class="section-desc">Descarga Wolf Anime de forma totalmente gratuita. Sin registro, sin suscripción.</p>
+    </div>
+
+    <div class="download__cards">
+      <div class="download-card download-card--featured" data-animate id="dl-windows">
+        <div class="download-card__badge">Recomendado</div>
+        <div class="download-card__icon">
+          <i class="fa-brands fa-windows"></i>
+        </div>
+        <h3>Windows</h3>
+        <span class="download-card__version">versión 1.0.0 · EXE 64-bit</span>
+        <button class="btn btn--ghost btn--full" disabled id="btn-windows">
+          Próximamente
+        </button>
+        <p class="download-card__req">Versión en desarrollo</p>
+      </div>
+
+      <div class="download-card" data-animate id="dl-android">
+            <div class="download-card__icon">
+              <i class="fa-brands fa-android"></i>
+            </div>
+        <h3>Android</h3>
+        <span class="download-card__version">versión 1.0.0 · APK</span>
+        <a href="#" class="btn btn--outline btn--full" id="btn-android">
+          <i class="fa-solid fa-download" style="margin-right: 8px;"></i>
+          Descargar APK
+        </a>
+        <a href="https://www.virustotal.com/gui/file/760f61bd9d791e09eb72dfc641a1b4d2fe2e6cd9bae0cfdc5e36924c988dd6a8?nocache=1"
+          target="_blank" rel="noopener noreferrer" class="btn-vt">
+          <i class="fa-solid fa-shield-virus" style="margin-right: 5px;"></i>
+          Verificado en VirusTotal
+        </a>
+        <div class="download-card__hash" title="SHA-256 Hash">SHA-256: 760f61bd9d791e09eb72dfc641a1b4d2fe2e6cd9bae0cfdc5e36924c988dd6a8</div>
+        <p class="download-card__req">Requiere Android 8.0+</p>
+      </div>
+
+      <div class="download-card download-card--soon" data-animate>
+            <div class="download-card__icon">
+              <i class="fa-brands fa-linux"></i>
+            </div>
+        <div class="soon-badge">Próximamente</div>
+        <h3>Linux</h3>
+        <span class="download-card__version">En desarrollo</span>
+        <button class="btn btn--ghost btn--full" disabled>Próximamente</button>
+        <p class="download-card__req">Notifícame cuando esté listo</p>
+      </div>
+    </div>
+
+    <div class="download__note">
+      <i class="fa-solid fa-circle-info" style="color: var(--green); font-size: 1.2rem;"></i>
+      Wolf Anime es gratuita y se mantiene con anuncios. Así podemos seguir ofreciendo contenido sin cobrar.
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <span class="section-tag">Preguntas</span>
+      <h2>Preguntas <span class="gradient-text">Frecuentes</span></h2>
+    </div>
+
+    <div class="faq__list">
+      <details class="faq-item" id="faq-1">
+        <summary>¿Wolf Anime es gratuita?</summary>
+        <p>Sí, Wolf Anime es 100% gratuita. Se sostiene con anuncios breves que nos permiten mantener el servicio y
+          seguir agregando contenido sin cobrar ninguna suscripción.</p>
+      </details>
+      <details class="faq-item" id="faq-2">
+        <summary>¿Es seguro descargar la app?</summary>
+        <p>Absolutamente. La aplicación no contiene malware, spyware ni ningún tipo de software dañino. Descarga directa
+          y limpia.</p>
+      </details>
+      <details class="faq-item" id="faq-3">
+        <summary>¿Necesito VPN para usarla?</summary>
+        <p>No es necesaria ninguna VPN. Wolf Anime funciona directamente sin restricciones geográficas adicionales.</p>
+      </details>
+      <details class="faq-item" id="faq-4">
+        <summary>¿En qué idiomas está disponible el contenido?</summary>
+        <p>Wolf Anime ofrece contenido con audio original en <strong>japonés</strong> con subtítulos en <strong>español
+            latino</strong>, así como audio doblado en español latino para los títulos que lo soporten.</p>
+      </details>
+      <details class="faq-item" id="faq-5">
+        <summary>¿Con qué frecuencia se actualiza el contenido?</summary>
+        <p>Los nuevos episodios se agregan automáticamente en cuanto están disponibles, generalmente minutos después de
+          su estreno oficial.</p>
+      </details>
+      <details class="faq-item" id="faq-6">
+        <summary>¿Puedo ver Wolf Anime en el televisor?</summary>
+        <p>Sí. Puedes transmitir el contenido directamente a tu TV usando <strong>WebVideoCaster</strong>: abre la app,
+          selecciona el video que quieres ver en Wolf Anime y emítelo a tu televisor compatible con Chromecast, Smart TV
+          o cualquier dispositivo DLNA. Sin necesidad de instalación adicional en la TV.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="logo-icon logo-icon--footer">
+          <img src="logo.png" alt="Wolf Anime Logo" width="180" height="auto" />
+        </div>
+        <p>La app de anime definitiva.<br />100% Gratis. Sin suscripciones.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="#features">Características</a></li>
+            <li><a href="#download">Descargar</a></li>
+            <li><a href="#screenshots">Capturas</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="javascript:void(0)" data-modal="modal-faq">FAQ</a></li>
+            <li><a href="javascript:void(0)" data-modal="modal-support">Soporte</a></li>
+            <li><a href="javascript:void(0)" data-modal="modal-support">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="javascript:void(0)" data-modal="modal-terms">Términos de Uso</a></li>
+            <li><a href="javascript:void(0)" data-modal="modal-privacy">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 Wolf Anime. Todos los derechos reservados.</span>
+      <div class="footer__socials">
+        <a href="https://www.tiktok.com/@WOLFANIMEOFICIAL" target="_blank" aria-label="TikTok" class="social-link">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS ===== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal-faq">
+      <button class="modal__close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__content">
+        <div class="modal__logo">
+          <img src="logo.png" alt="Wolf Anime" />
+        </div>
+        <h3>Preguntas Frecuentes</h3>
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary>¿Cómo instalo la aplicación en Android?</summary>
+            <p>Descarga el archivo APK desde nuestra web oficial. Asegúrate de habilitar la instalación de "Fuentes
+              desconocidas" en los ajustes de seguridad de tu dispositivo Android 7.0 o superior.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Es segura la descarga?</summary>
+            <p>Sí. Cada versión de Wolf Anime es analizada minuciosamente por VirusTotal. Puedes ver el reporte oficial y
+              el hash SHA-256 directamente en la sección de descargas.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿La aplicación es realmente gratuita?</summary>
+            <p>Wolf Anime es 100% gratuita. No existen suscripciones premium. Nos sostenemos gracias a anuncios breves
+              para cubrir los costos de los servidores.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Por qué todo es local y no hay cuentas?</summary>
+            <p>Para proteger tu privacidad al máximo. Tus favoritos y progreso se guardan solo en tu dispositivo. No
+              recolectamos información personal ni correos electrónicos.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-support">
+      <button class="modal__close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__content">
+        <div class="modal__logo">
+          <img src="logo.png" alt="Wolf Anime" />
+        </div>
+        <h3>Ayuda y Soporte</h3>
+        <p>¿Tienes dudas o algún problema? Puedes especificar cualquier <strong>error de reproducción</strong> a través de nuestra App o redes sociales.</p>
+        <div class="support-grid" style="grid-template-columns: 1fr;">
+          <div class="support-card support-card--tiktok">
+            <strong>TikTok Oficial</strong>
+            <p>Reporta fallos, errores de reproducción y recibe noticias en video.</p>
+            <a href="https://www.tiktok.com/@WOLFANIMEOFICIAL" target="_blank" class="btn btn--small">
+              <i class="fa-brands fa-tiktok"></i> Ir a TikTok
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-terms">
+      <button class="modal__close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__content">
+        <div class="modal__logo">
+          <img src="logo.png" alt="Wolf Anime" />
+        </div>
+        <h3>Términos de Uso</h3>
+        <div class="legal-text">
+          <p>Al descargar Wolf Anime, aceptas que nuestra aplicación es un agregador de contenido de terceros. No
+            alojamos ningún tipo de video en nuestros servidores.</p>
+          <p>Wolf Anime es para uso estrictamente personal. El usuario es responsable del uso que se le dé a la
+            información y enlaces proporcionados.</p>
+          <p>Nos reservamos el derecho de actualizar la aplicación y estos términos sin previo aviso.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-privacy">
+      <button class="modal__close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__content">
+        <div class="modal__logo">
+          <img src="logo.png" alt="Wolf Anime" />
+        </div>
+        <h3>Política de Privacidad</h3>
+        <div class="legal-text">
+          <p>Tu privacidad es nuestra prioridad absoluta. <strong>Wolf Anime no recolecta, almacena ni comparte</strong>
+            ningún dato personal de sus usuarios.</p>
+          <ul>
+            <li>No pedimos registro ni correos electrónicos.</li>
+            <li>No accedemos a tu ubicación ni contactos.</li>
+            <li>El progreso de tus series y favoritos se guarda exclusivamente en el almacenamiento local de tu
+              dispositivo.</li>
+          </ul>
+          <p>Si eliminas la aplicación o borras sus datos, tu historial se perderá permanentemente ya que no conservamos
+            respaldos en la nube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
