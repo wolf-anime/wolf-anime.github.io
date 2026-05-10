@@ -293,12 +293,11 @@ animateEls.forEach(el => revealObserver.observe(el));
 /* ---- Smooth download button animation (solo Android) ---- */
 const btnAndroid = document.getElementById('btn-android');
 if (btnAndroid) {
-  btnAndroid.addEventListener('click', e => {
-    e.preventDefault();
+  btnAndroid.addEventListener('click', () => {
     const originalText = btnAndroid.innerHTML;
-    btnAndroid.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="animation:spin 1s linear infinite"><path d="M12 4V2A10 10 0 002 12h2a8 8 0 018-8z"/></svg> Preparando...`;
+    btnAndroid.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Preparando...`;
     setTimeout(() => {
-      btnAndroid.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> ¡Descarga lista!`;
+      btnAndroid.innerHTML = `<i class="fa-solid fa-check"></i> ¡Descarga lista!`;
       setTimeout(() => { btnAndroid.innerHTML = originalText; }, 2500);
     }, 1800);
   });
