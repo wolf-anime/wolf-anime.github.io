@@ -291,17 +291,10 @@ animateEls.forEach(el => revealObserver.observe(el));
 })();
 
 /* ---- Smooth download button animation (solo Android) ---- */
+// Lógica de feedback de descarga simplificada o eliminada para evitar conflictos con navegación nativa en GitHub
 const btnAndroid = document.getElementById('btn-android');
-if (btnAndroid) {
-  btnAndroid.addEventListener('click', () => {
-    const originalText = btnAndroid.innerHTML;
-    btnAndroid.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Preparando...`;
-    setTimeout(() => {
-      btnAndroid.innerHTML = `<i class="fa-solid fa-check"></i> ¡Descarga lista!`;
-      setTimeout(() => { btnAndroid.innerHTML = originalText; }, 2500);
-    }, 1800);
-  });
-}
+// Se deja que el enlace funcione 100% de forma nativa a través del HTML
+
 
 /* Spin keyframe */
 const style = document.createElement('style');
