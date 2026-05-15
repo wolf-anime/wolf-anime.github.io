@@ -379,38 +379,41 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   animation: fadeInDown .8s .3s ease both;
 }
 
-.hero__stats {
+.hero__quick-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   animation: fadeInDown .8s .4s ease both;
 }
-
-.stat { text-align: center; }
-.stat__number {
-  font-size: 2rem;
-  font-weight: 900;
+.quick-label {
+  font-size: 0.95rem;
+  color: var(--white-70);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.quick-icons {
+  display: flex;
+  gap: 12px;
+}
+.q-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white-08);
+  border: 1px solid var(--white-15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.15rem;
+  transition: var(--transition);
+}
+.q-icon:hover {
+  background: var(--green-glow-strong);
   color: var(--green);
-  font-variant-numeric: tabular-nums;
-}
-.stat__unit {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--green);
-}
-.stat__label {
-  display: block;
-  font-size: 0.78rem;
-  color: var(--white-40);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  margin-top: 2px;
-}
-.stat__divider {
-  width: 1px;
-  height: 40px;
-  background: var(--white-15);
+  border-color: var(--green);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,255,136,.2);
 }
 
 /* ===== PHONE MOCKUP ===== */
@@ -885,6 +888,97 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: radial-gradient(circle, rgba(179,0,255,0.2) 0%, transparent 60%);
   z-index: 1;
   pointer-events: none;
+}
+
+/* ===== LEGAL ANIME ===== */
+.legal-anime {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.legal-anime__inner {
+  background: var(--black-2);
+  border: 1px solid var(--white-08);
+  border-radius: var(--radius-lg);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  box-shadow: inset 0 0 80px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.legal-anime__inner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 4px;
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+}
+
+.legal-anime__content {
+  flex: 1;
+}
+
+.legal-anime__content h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.legal-anime__content p {
+  color: var(--white-70);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.legal-anime__brands {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.brand-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--black-3);
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-weight: 700;
+  color: var(--white);
+  border: 1px solid var(--white-15);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.brand-pill:hover {
+  transform: translateY(-3px);
+  border-color: var(--white-40);
+}
+
+.brand-logo {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--white);
+  padding: 2px;
+}
+
+@media (max-width: 900px) {
+  .legal-anime__inner {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
 }
 
 /* ===== SCREENSHOTS ===== */
